@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevSolutions</title>
+
+    <style>
+
+        /* Configuração geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(175, 175, 177);
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2600ff;
+            color: rgb(233, 233, 228);
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px;
+        }
+
+        /* Menu */
+        nav a {
+            color: rgb(226, 226, 233);
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fffcff;
+        }
+
+        /* Conteúdo */
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 40px 10px;
+            border-bottom: 3px solid #e09a9a;
+        }
+
+        h2 {
+            color: #f6f6f7;
+            text-align: center;
+        }
+
+        /* Início */
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .inicio div {
+            width: 50%;
+        }
+
+        .imagem {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Serviços */
+        .servico {
+            background-color: #eaf2f8;
+            border: 1px solid #d4e0e9;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .servico h3 {
+            color: #294d7c;
+        }
+
+        /* Equipe */
+        .equipe {
+            display: flex;
+            gap: 15px;
+        }
+
+        .membro {
+            width: 33%;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+
+        .membro img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .membro h3 {
+            color: #294d7c;
+        }
+
+        /* Projetos */
+        .projeto {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .projeto img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .projeto h3 {
+            color: #294d7c;
+        }
+
+        /* Contato */
+        .contato a {
+            color: #294d7c;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: #3c5983;
+            color: white !important;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .botao:hover {
+            background-color: #172d4d;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #5686ce;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Deixa o site melhor no celular */
+        @media (max-width: 700px) {
+
+            .inicio {
+                display: block;
+            }
+
+            .inicio div {
+                width: 100%;
+            }
+
+            .equipe {
+                display: block;
+            }
+
+            .membro {
+                width: auto;
+                margin-bottom: 15px;
+            }
+
+            .projeto {
+                display: block;
+                text-align: center;
+            }
+
+            .projeto img {
+                width: 80%;
+            }
+
+            nav a {
+                display: inline-block;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header id="inicio">
+
+        <h1>DevSolutions</h1>
+
+        <p>
+            Tecnologia, inovação e soluções digitais.
+        </p>
+
+        <!-- Menu -->
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Início -->
+        <section class="inicio">
+
+            <div>
+
+                <h2>Bem-vindo à DevSolutions</h2>
+
+                <p>
+                    Somos uma empresa que trabalha com
+                    desenvolvimento de soluções digitais.
+                </p>
+
+                <p>
+                    Nosso objetivo é transformar ideias
+                    em projetos usando tecnologia.
+                </p>
+
+            </div>
+
+            <div>
+
+                <img
+                    class="imagem"
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+                    alt="Equipe trabalhando">
+
+            </div>
+
+        </section>
+
+
+        <!-- Sobre -->
+        <section id="sobre">
+
+            <h2>Sobre a DevSolutions</h2>
+
+            <p>
+                A DevSolutions é uma empresa fictícia criada
+                para um projeto acadêmico.
+            </p>
+
+            <p>
+                Trabalhamos com tecnologia e desenvolvimento
+                de sistemas.
+            </p>
+
+            <h3>Missão</h3>
+
+            <p>
+                Usar a tecnologia para resolver problemas
+                e facilitar processos.
+            </p>
+
+        </section>
+
+
+        <!-- Serviços -->
+        <section id="servicos">
+
+            <h2>Nossos Serviços</h2>
+
+            <div class="servico">
+
+                <h3>Desenvolvimento Web</h3>
+
+                <p>
+                    Criação de sites e páginas para empresas.
+                </p>
+
+            </div>
+
+            <div class="servico">
+
+                <h3>Desenvolvimento de Sistemas</h3>
+
+                <p>
+                    Criação de sistemas personalizados.
+                </p>
+
+            </div>
+
+            <div class="servico">
+
+                <h3>Banco de Dados</h3>
+
+                <p>
+                    Organização e gerenciamento de dados.
+                </p>
+
+            </div>
+
+            <div class="servico">
+
+                <h3>Consultoria</h3>
+
+                <p>
+                    Ajuda para empresas utilizarem melhor
+                    a tecnologia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Equipe -->
+        <section id="equipe">
+
+            <h2>Nossa Equipe</h2>
+
+            <div class="equipe">
+
+                <div class="membro">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/44.jpg"
+                        alt="Ana Souza">
+
+                    <h3>Ana Souza</h3>
+
+                    <h4>Front-End</h4>
+
+                    <p>
+                        Trabalha com criação de páginas e interfaces.
+                    </p>
+
+                </div>
+
+
+                <div class="membro">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                        alt="Carlos Oliveira">
+
+                    <h3>Carlos Oliveira</h3>
+
+                    <h4>Back-End</h4>
+
+                    <p>
+                        Trabalha com sistemas e APIs.
+                    </p>
+
+                </div>
+
+
+                <div class="membro">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/65.jpg"
+                        alt="Mariana Lima">
+
+                    <h3>Mariana Lima</h3>
+
+                    <h4>Banco de Dados</h4>
+
+                    <p>
+                        Cuida da organização dos dados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projetos -->
+        <section id="projetos">
+
+            <h2>Nossos Projetos</h2>
+
+            <div class="projeto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80"
+                    alt="Sistema de vendas">
+
+                <div>
+
+                    <h3>Sistema de Vendas</h3>
+
+                    <p>
+                        Sistema para controlar vendas,
+                        clientes e produtos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="projeto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80"
+                    alt="Aplicativo">
+
+                <div>
+
+                    <h3>Aplicativo Empresarial</h3>
+
+                    <p>
+                        Aplicativo para ajudar nas atividades
+                        de uma empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="projeto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=500&q=80"
+                    alt="Site">
+
+                <div>
+
+                    <h3>Site Institucional</h3>
+
+                    <p>
+                        Site para apresentar uma empresa
+                        e seus serviços.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contato -->
+        <section id="contato">
+
+            <h2>Entre em Contato</h2>
+
+            <p>
+                Entre em contato para conhecer nossos serviços.
+            </p>
+
+            <p>
+                📧 E-mail:
+                <a href="mailto:contato@devsolutions.com">
+                    contato@devsolutions.com
+                </a>
+            </p>
+
+            <p>
+                📞 Telefone:
+                <a href="tel:+5511999999999">
+                    (11) 99999-9999
+                </a>
+            </p>
+
+            <p>
+                📍 São Paulo - SP
+            </p>
+
+            <p>
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+            </p>
+
+            <p>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
+            </p>
+
+            <a class="botao" href="mailto:contato@devsolutions.com">
+                Solicitar orçamento
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer>
+
+        <p>
+            © 2026 DevSolutions
+        </p>
+
+        <p>
+            Projeto acadêmico - HTML e CSS
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
