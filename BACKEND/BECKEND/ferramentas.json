@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "gustavo",
+    "quantidade": 9,
+    "custoUnitario": 3
+  },
+  {
+    "nome": "pretinho uva",
+    "quantidade": 303,
+    "custoUnitario": 2
+  },
+  {
+    "nome": "juan",
+    "quantidade": 4,
+    "custoUnitario": 7
+  },
+  {
+    "nome": "faz o l",
+    "quantidade": 9,
+    "custoUnitario": 1
+  },
+  {
+    "nome": "ai lula",
+    "quantidade": 0,
+    "custoUnitario": 2
+  },
+  {
+    "nome": "ai bosonario",
+    "quantidade": 4,
+    "custoUnitario": 50
+  }
+]
