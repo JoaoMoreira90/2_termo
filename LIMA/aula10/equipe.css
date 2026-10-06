@@ -1,0 +1,7 @@
+.equipe {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 8%;
+    gap: 30px;
+}
+
