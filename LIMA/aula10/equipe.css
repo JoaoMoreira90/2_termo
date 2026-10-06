@@ -1,7 +1,40 @@
 .equipe {
     display: flex;
-    flex-direction: row;
-    padding: 30px 8%;
     gap: 30px;
+    /* Exercicio 3: Eles diferenciam aonde ficara */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
 }
 
+.f {
+    display: flex;
+    justify-content: flex-start ;
+}
+
+.c {
+    display: flex;
+    justify-content: center;
+}
+
+.fl-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.spc-bet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spc-eve {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
