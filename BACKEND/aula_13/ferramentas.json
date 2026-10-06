@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "chave oval",
+    "quantidade": 4,
+    "custoUnitario": 15
+  },
+  {
+    "nome": "martelo",
+    "quantidade": 3,
+    "custoUnitario": 20
+  },
+  {
+    "nome": "gustavo",
+    "quantidade": 50,
+    "custoUnitario": 100
+  },
+  {
+    "nome": "jonas",
+    "quantidade": 67,
+    "custoUnitario": 1
+  }
+]
