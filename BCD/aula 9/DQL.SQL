@@ -15,8 +15,10 @@ SELECT nome, email FROM cliente;
 --  EX 3: INSERINO APELIDO NAS COLUNAS -- ALIAS
 SELECT nome AS cliente
 FROM cliente;
+
 SELECT nome AS cliente, telefone AS contatos, ativo AS STATUS
 FROM  cliente;
+
 SELECT nome, preco, preco * 090 AS preço_pROMOCINAL
 FROM produto;
 
@@ -34,15 +36,17 @@ FROM produto
 WHERE preco > 10;
 -- RETORNA VALORES ACIMA DE 10 REAIS EM SEUS PREÇOS
 
+
 SELECT nome, preco
 FROM cliente
 WHERE ativo = TRUE;
-
+--RETORNA PRODUTOS ATIVOS
 
 SELECT id_pedido, data_pedido, valor_total
 FROM pedido
-WHERE valor_total >= 25.00;
--- RETORNA PEDIDOS ACIMA DE DTERMINADO VALOR
+WHERE valor_total >= 25.00
+-- RETORNA PEDIDOS ACIMA DE DETERMINADO VALOR
+
 
 -- OPERADORES DE COMPARAÇÃO
 -- = IGUAL
@@ -170,5 +174,64 @@ SELECT id_pedido, data_pedido, DATE(data_pedido) AS DATAS, MONTH(data_pedido) AS
 FROM pedido;
 
 -- SUBSTITUINDO O NULL NO REULTDO
-SELECT  nome, CALESCE(telefone, 'Não informado') AS Contato
+SELECT  nome, COALESCE(telefone, 'Não informado') AS Contato
 FROM cliente;
+
+
+
+-- EX 15: FUNÇÕES DE AGREGAÇÃO - SUM, AVG, MIN, MAX, COUNT
+-- COUNT - CONTAR QUANTIDADE DE REGISTROS
+-- SUM - SOMAS DE VALORES
+-- AVG - MÉDIA DE VALORES
+-- MIN MENOR VALOR
+-- MAX - MAIOR VALOR
+
+SELECT COUNT(*) AS TOtal_Cliente
+FROM cliente;
+-- RESULTADO DE QUANTIDADE DE CLIENTES
+
+SELECT AVG(preco) AS Média_Preços
+FROM produto;
+-- MÉDIA DO VALOR DOS PRODUTOS
+
+SELECT MIN(preco) AS PROMOÇÃO, MAX(preco) AS REAJUSTE, AVG(preco) AS MÉDIA_PREÇOS
+FROM produto;
+-- RESUMO DE PREÇOS
+
+SELECT SUM(valor_total) AS FATURAMENTO_MENSAL
+FROM pedido
+WHERE status = 'ABERTO'
+-- TOTAL DE PEDIDOS FINALIZADOS
+
+
+-- EX 16: GRUPO BY - AGRUPAR  DADOS
+SELECT CIDADE, COUNT(*) AS QTDE_CIDADES
+FROM cliente
+GROUP BY cidade;
+--  CONSULTA POR GRUOPOS DE CIDADES
+
+SELECT id_categoria, COUNT(*) AS QTDE_PRODUTOS
+FROM produto
+GROUP BY id_categoria;
+-- QUANTIDADE DE PRODUTOS POR CATEGORIA
+
+
+--  EX 17: HAVING - FILTRO POR GRUPOS
+SELECT cidade, COUNT(*) AS QUANTIDADES_CLIENTES
+FROM cliente
+GROUP BY cidade
+HAVING COUNT(*) >= 2;
+-- DICA: USAR O HAVING E NÃO ESQUECER O GRUOP BY
+
+
+----------------------------------------------------------------------------------------------
+-- EX 18: CONSULTA COMPLETA
+SELECT COLUNAS
+FROM TABELAS
+WHERE CONDICAO
+GROUP BY COLUNAS_AGRUPAR
+HAVING CONDICAO
+ORDER BY COLUNAS
+LIMIT QUANTIDADE;
+---------------------------------------------------------------------------------------------
+
