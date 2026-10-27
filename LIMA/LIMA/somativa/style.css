@@ -1,0 +1,14 @@
+.a {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220PX, 1fr));
+     gap: 30PX;
+     list-style: none;
+      margin: 0;
+      padding: 5px;
+    align-items: center;
+    height: 100px;
+    background-color: #A65E3F;
+    justify-content: space-between;
+    display: flex;
+}

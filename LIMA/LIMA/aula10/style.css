@@ -1,0 +1,93 @@
+/* .menu { */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-direction:column; */
+    /* direcao row e columns */
+
+
+    /* Alinhamento e Espaçamento do conteudo horizontal */
+    /* justify-content:center; */
+    /* justify-content:space-around; */
+    /* justify-content:space-between; */
+    /* justify-content:space-evenly; */
+
+
+    /* Alinhamento e Espaçamento do conteudo vertical */
+    /* align-items:center; */
+    /* align-items:flex-end; */
+    /* align-items:flex-start; */
+    /* align-items:center; */
+    /* align-items:stretch;
+    gap: 50px;
+
+}
+
+.cb-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.ban {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color:rgb(233, 184, 121)
+    }
+
+.ban-c, ban-img {
+        flex: 1;
+}
+
+ban-img img {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.lista-cartao {
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+    height: 100px;
+
+}
+
+
+.lista-cartao > li{
+    flex:1;
+    min-width: 220px;
+    height: 180px;
+    background-color:rgb(236, 204, 123)
+}
+
+.cont {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 60px 8%;
+}
+
+.cont-c, .cont-img {
+    flex: 2;
+} */
+
+/* .lista-cartao {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+
+
+
+
+
+
+

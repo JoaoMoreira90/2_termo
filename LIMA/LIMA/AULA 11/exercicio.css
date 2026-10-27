@@ -1,0 +1,35 @@
+.exe-grid {
+display: grid;
+/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  exercicio 1*/
+/* grid-template-columns: repeat(2,1fr); exercicio 4*/
+/* grid-template-columns: 2fr 1fr; exercicio 3 ele da um espasamento para dividir as tabelas */
+grid-template-columns: repeat(3, 1fr);  
+/* xercico 5 */
+}
+
+
+/* celular */
+@media (max-width: 600px) {
+    .grid-img-ca {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* tablets */
+@media (max-width: 900px) {
+    .grid-img-ca{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Responsividade de conteudo e imagns */
+@media (max-width: 768px) {
+    .grid-ca {
+        grid-template-columns: 1fr;
+        
+    }
+    .grid-img-ca {
+        grid-template-columns: 2fr;
+    }
+}
